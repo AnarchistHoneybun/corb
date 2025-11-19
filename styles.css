@@ -108,6 +108,53 @@ main {
     font-style: italic;
 }
 
+/* Footnotes */
+.footnotes {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+}
+
+.footnote-separator {
+    width: 30%;
+    margin: 2rem 0 1.5rem 0;
+    border: none;
+    border-top: 1px solid #2c2c2c;
+}
+
+.footnotes ol {
+    padding-left: 1.5em;
+    text-align: left;
+}
+
+.footnotes li {
+    margin-bottom: 0.5rem;
+}
+
+.footnote-ref {
+    text-decoration: none;
+    color: #8b4513;
+    font-weight: normal;
+}
+
+.footnote-backref {
+    text-decoration: none;
+    color: #2c2c2c;
+    margin-left: 0.3em;
+}
+
+.footnotes a {
+    color: #2c2c2c;
+}
+
+.footnotes a:hover {
+    text-decoration: underline;
+}
+
+sup {
+    line-height: 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
