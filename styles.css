@@ -1,181 +1,226 @@
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Garamond', 'EB Garamond', 'Cormorant Garamond', serif;
-    line-height: 1.8;
-    color: #2c2c2c;
-    background-color: #fafaf8;
-    padding: 0;
+  font-family: "Garamond", "EB Garamond", "Cormorant Garamond", serif;
+  line-height: 1.8;
+  color: #2c2c2c;
+  background-color: #fafaf8;
+  padding: 0;
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    border-bottom: 1px solid #2c2c2c;
-    background-color: #fafaf8;
+  display: flex;
+  border-bottom: 1px solid #2c2c2c;
+  background-color: #fafaf8;
 }
 
 .nav-item {
-    padding: 15px 25px;
-    text-decoration: none;
-    color: #2c2c2c;
-    font-size: 1.125rem;
-    border-right: 1px solid #2c2c2c;
-    transition: background-color 0.2s;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 1.125rem;
+  border-right: 1px solid #2c2c2c;
+  transition: background-color 0.2s;
 }
 
 .nav-item:hover {
-    background-color: #f0f0ee;
+  background-color: #f0f0ee;
 }
 
 .nav-item.active {
-    background-color: #2c2c2c;
-    color: #fafaf8;
-    font-weight: 500;
+  background-color: #2c2c2c;
+  color: #fafaf8;
+  font-weight: 500;
 }
 
 /* Container */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px 20px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 20px 20px;
 }
 
 /* Header and Logo */
 header {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .logo {
-    max-width: 320px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Main content */
 main {
-    text-align: justify;
+  text-align: justify;
 }
 
 .intro-text {
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    text-indent: 2em;
-    letter-spacing: 0.01em;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  text-indent: 2em;
+  letter-spacing: 0.01em;
 }
 
 .intro-text:first-child {
-    margin-top: 0;
-    text-indent: 0;
+  margin-top: 0;
+  text-indent: 0;
 }
 
 /* Drop cap for first paragraph */
 .intro-text:first-child::first-letter {
-    float: left;
-    font-size: 4em;
-    line-height: 0.85;
-    margin: 0.1em 0.1em 0 0;
-    font-weight: normal;
+  float: left;
+  font-size: 4em;
+  line-height: 0.85;
+  margin: 0.1em 0.1em 0 0;
+  font-weight: normal;
 }
 
 /* Schedule page styles */
 .page-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    font-weight: normal;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 .current-reading {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .reading-info {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  text-align: center;
 }
 
 .reading-info em {
-    font-style: italic;
+  font-style: italic;
+}
+
+/* Past Reads section */
+.past-reads {
+  margin-top: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.past-reads-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.past-reads-list li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5em;
+}
+
+.past-reads-list li:before {
+  content: "• ";
+  color: #8b4513;
+  font-weight: bold;
+  position: absolute;
+  margin-left: -1.5em;
+}
+
+.past-reads-list em {
+  font-style: italic;
+}
+
+.date-range {
+  color: #6a6a6a;
+  font-size: 0.95rem;
 }
 
 /* Footnotes */
 .footnotes {
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #4a4a4a;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #4a4a4a;
 }
 
 .footnote-separator {
-    width: 30%;
-    margin: 2rem 0 1.5rem 0;
-    border: none;
-    border-top: 1px solid #2c2c2c;
+  width: 30%;
+  margin: 2rem 0 1.5rem 0;
+  border: none;
+  border-top: 1px solid #2c2c2c;
 }
 
 .footnotes ol {
-    padding-left: 1.5em;
-    text-align: left;
+  padding-left: 1.5em;
+  text-align: left;
 }
 
 .footnotes li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footnote-ref {
-    text-decoration: none;
-    color: #8b4513;
-    font-weight: normal;
+  text-decoration: none;
+  color: #8b4513;
+  font-weight: normal;
 }
 
 .footnote-backref {
-    text-decoration: none;
-    color: #2c2c2c;
-    margin-left: 0.3em;
+  text-decoration: none;
+  color: #2c2c2c;
+  margin-left: 0.3em;
 }
 
 .footnotes a {
-    color: #2c2c2c;
+  color: #2c2c2c;
 }
 
 .footnotes a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 sup {
-    line-height: 0;
+  line-height: 0;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        padding: 20px 15px;
-    }
-    
-    .nav-item {
-        padding: 12px 20px;
-        font-size: 1rem;
-    }
-    
-    header {
-        margin-bottom: 40px;
-    }
-    
-    .logo {
-        max-width: 300px;
-    }
-    
-    .intro-text {
-        font-size: 1rem;
-        text-align: left;
-    }
+  .container {
+    padding: 20px 15px;
+  }
+
+  .nav-item {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    max-width: 300px;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    text-align: left;
+  }
 }
